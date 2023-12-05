@@ -15,9 +15,11 @@
 @code {
 
 
-    private void ExtractorLight()
+    private async void ExtractorLight()
     {
-        BroadLinkService.SendButtonCommand();
+        await BroadLinkService.SendButtonCommand();
+
+        await InvokeAsync(StateHasChanged);
     }
 }
 
