@@ -1,0 +1,23 @@
+﻿@page "/house"
+
+@using Home44.Services;
+@inject IBroadlinkService BroadLinkService;
+
+<PageTitle>House</PageTitle>
+
+<h1>In the House</h1>
+
+
+Kitchen Extractor
+
+<button class="btn btn-primary" @onclick="ExtractorLight">Light</button>
+
+@code {
+
+
+    private void ExtractorLight()
+    {
+        BroadLinkService.SendButtonCommand();
+    }
+}
+
