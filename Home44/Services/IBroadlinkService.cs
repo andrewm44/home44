@@ -2,7 +2,7 @@
 {
     public interface IBroadlinkService
     {
-        public Task SendButtonCommand();
+        public Task SendButtonCommand(string cmd);
 
     }
 }

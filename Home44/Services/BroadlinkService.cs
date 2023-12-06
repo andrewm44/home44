@@ -6,7 +6,7 @@ namespace Home44.Services
 {
     public class BroadlinkService : IBroadlinkService
     {
-        public async Task SendButtonCommand()
+        public async Task SendButtonCommand(string cmd)
         {
             string extractorLight = "";
 
@@ -21,8 +21,8 @@ namespace Home44.Services
                 await mqttClient.ConnectAsync(mqttClientOptions, CancellationToken.None);
 
                 var applicationMessage = new MqttApplicationMessageBuilder()
-                    .WithTopic("mqtttest")
-                    .WithPayload("yoinks")
+                    .WithTopic("rfremotesends")
+                    .WithPayload(cmd)
                     .Build();
 
                 await mqttClient.PublishAsync(applicationMessage, CancellationToken.None);

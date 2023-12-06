@@ -17,7 +17,7 @@
 
     private async void ExtractorLight()
     {
-        await BroadLinkService.SendButtonCommand();
+        await BroadLinkService.SendButtonCommand("extractorlight");
 
         await InvokeAsync(StateHasChanged);
     }
