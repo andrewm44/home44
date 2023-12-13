@@ -8,17 +8,27 @@
 <h1>In the House</h1>
 
 
-<h3>Kitchen Extractor</h3>
+<h4>Kitchen Extractor</h4>
+<div class="row">
+   
+    <div class="col-6">
+       
+        <div class="mt-6">
+            <button class="btn btn-primary std-button" @onclick="ExtractorUp">Up</button>
+        </div>
+        <div class ="mt-6">
+            <button class="btn btn-primary std-button" @onclick="ExtractorDown">Down</button>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="mt-6">
+            <button class="btn btn-primary std-button" @onclick="ExtractorLight">Light</button>
+        </div>
+       
 
-<div>
-<button class="btn btn-primary" @onclick="ExtractorLight">Light</button>
+    </div>
 </div>
-<div>
-    <button class="btn btn-primary" @onclick="ExtractorUp">Up</button>
-</div>
-<div>
-    <button class="btn btn-primary" @onclick="ExtractorDown">Down</button>
-</div>
+
 
 @code {
 

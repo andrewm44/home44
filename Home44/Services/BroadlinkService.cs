@@ -29,7 +29,7 @@ namespace Home44.Services
 
                 await mqttClient.DisconnectAsync();
 
-               // Console.WriteLine("MQTT application message is published.");
+               
             }
 
         }

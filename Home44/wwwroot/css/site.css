@@ -63,6 +63,15 @@ a, .btn-link {
     color: white;
 }
 
-    .blazor-error-boundary::after {
-        content: "An error has occurred."
-    }
+.blazor-error-boundary::after {
+    content: "An error has occurred."
+}
+
+/* my things */
+
+.std-button { 
+    min-width: 80px;
+    max-width: 80px;
+}
+
+
